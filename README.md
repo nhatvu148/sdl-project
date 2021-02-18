@@ -30,3 +30,4 @@
 - https://cmake.org/cmake/help/latest/guide/tutorial/index.html#guide:CMake%20Tutorial
 - https://cmake.org/cmake/help/latest/index.html#
 - https://docs.microsoft.com/en-us/cpp/build/vcpkg?view=msvc-160&viewFallbackFrom=vs-2019
+- https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-160&viewFallbackFrom=vs-2019
