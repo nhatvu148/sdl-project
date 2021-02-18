@@ -1,6 +1,7 @@
-# CMake Commands:
+# Default build folders:
 
-- cmake -S . -B out/build/
+- ./out/build for Windows
+- ./build for Linux and MacOS
 
 # VSCode Command Palette:
 
@@ -11,5 +12,9 @@
 - cmake:debug
 
 # Note:
-- Initialize cmake project in MacOS/Linux/Windows will be the same
-- When using first time in Windows: cmake:quick start or configure -> select MingGW64 gcc
+- If used in VS: Open Cmake Settings Editor => Select Toolset and Build root (CMakeSettings.json)
+- If used in VSCode: Initialize cmake project in MacOS/Linux/Windows will be the same. When using first time in Windows: cmake:quick start or configure -> select MingGW64 gcc
+
+# CMake Commands:
+
+- cmake -S . -B out/build/
