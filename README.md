@@ -18,6 +18,7 @@
 # CMake Commands:
 
 - cmake -S . -B out/build/
+- make -C out/build/
 
 # VSCode Extensions for C++:
 
