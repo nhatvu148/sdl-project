@@ -1,0 +1,5 @@
+- cmake:quick start
+- cmake:select variant
+- cmake:configure
+- cmake:build
+- cmake:debug
