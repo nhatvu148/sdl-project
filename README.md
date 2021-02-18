@@ -18,3 +18,9 @@
 # CMake Commands:
 
 - cmake -S . -B out/build/
+
+# VSCode Extensions for C++:
+
+- ms-vscode.cpptools
+- ms-vscode.cmake-tools
+- twxs.cmake
