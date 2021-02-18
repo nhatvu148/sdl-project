@@ -6,6 +6,14 @@ enable_testing()
 
 add_executable(sdl-project main.cpp)
 
+add_subdirectory(Adder)
+
+target_include_directories(${PROJECT_NAME} PUBLIC  Adder)
+
+target_link_directories(${PROJECT_NAME} PRIVATE  Adder)
+
+target_link_libraries(${PROJECT_NAME} adder)
+
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
