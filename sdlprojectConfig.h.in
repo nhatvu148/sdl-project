@@ -1,2 +1,4 @@
 #define sdlproject_VERSION_MAJOR @sdlproject_VERSION_MAJOR@
 #define sdlproject_VERSION_MINOR @sdlproject_VERSION_MINOR@
+
+#cmakedefine USE_ADDER
