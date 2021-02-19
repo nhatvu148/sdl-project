@@ -7,6 +7,10 @@
 
 int main(int argc, char **argv)
 {
+    // if (argc > 1)
+    // {
+    //     return 1;
+    // }
     std::cout << argv[0] << " Version " << sdlproject_VERSION_MAJOR << "." << sdlproject_VERSION_MINOR << '\n';
     std::cout << "Hello, world!\n";
 

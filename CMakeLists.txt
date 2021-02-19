@@ -63,3 +63,6 @@ install(FILES "${PROJECT_BINARY_DIR}/sdlprojectConfig.h" DESTINATION include)
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
+
+add_test("Test1" "${PROJECT_BINARY_DIR}/${PROJECT_NAME}")
+# add_test("Test2" "${PROJECT_BINARY_DIR}/${PROJECT_NAME}" "Some Parameters")
