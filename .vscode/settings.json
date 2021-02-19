@@ -1,5 +1,9 @@
 {
     "cmake.configureOnOpen": true,
+    "cmake.configureSettings": {
+        "GLFW_BUILD_DOCS": "OFF",
+        "USE_ADDER": "ON"
+    },
     "files.associations": {
         "__bit_reference": "cpp",
         "__config": "cpp",
