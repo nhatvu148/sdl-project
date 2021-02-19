@@ -37,3 +37,4 @@
 
 - git submodule add https://github.com/glfw/glfw.git external/glfw
 - git commit -am "some comments"
+- chmod +x configure.sh build.sh run.sh
