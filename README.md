@@ -1,17 +1,20 @@
 # Default build folders:
 
-- ./out/build for Windows
-- ./build for Linux and MacOS
+- ./out/build for Windows (in Visual Studio)
+- ./build (in Visual Studio Code)
 
 # VSCode Command Palette:
 
 - cmake:quick start
+- cmake:select a kit
 - cmake:select variant
 - cmake:configure
 - cmake:build
 - cmake:debug
+- cmake:install
 
 # Note:
+- In Windows: better use kit as Visual Studio 2019 build tool
 - If used in VS: Open Cmake Settings Editor => Select Toolset and Build root (CMakeSettings.json)
 - If used in VSCode: Initialize cmake project in MacOS/Linux/Windows will be the same. When using first time in Windows: cmake:quick start or configure -> select MingGW64 gcc
 
