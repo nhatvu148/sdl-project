@@ -7,7 +7,7 @@
       "inheritEnvironments": [ "msvc_x64" ],
       "buildRoot": "${projectDir}\\out\\build\\${name}",
       "installRoot": "${projectDir}\\out\\install\\${name}",
-      "cmakeCommandArgs": "",
+      "cmakeCommandArgs": "-DGLFW_BUILD_DOCS=OFF, -DUSE_ADDER=ON",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
       "variables": []
