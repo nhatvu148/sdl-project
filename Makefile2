@@ -1,0 +1,11 @@
+all: target1
+
+target1: target2
+	@echo World!
+
+target2:
+	@echo "Hello"
+
+clean:
+	@echo "Cleaning up..."
+    # rm *.txt
