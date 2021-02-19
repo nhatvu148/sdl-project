@@ -32,3 +32,7 @@
 - https://cmake.org/cmake/help/latest/index.html#
 - https://docs.microsoft.com/en-us/cpp/build/vcpkg?view=msvc-160&viewFallbackFrom=vs-2019
 - https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-160&viewFallbackFrom=vs-2019
+
+# Git Submodule:
+
+- git submodule add https://github.com/glfw/glfw.git external/glfw
