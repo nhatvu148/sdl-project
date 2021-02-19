@@ -17,6 +17,9 @@
 - In Windows: better use kit as Visual Studio 2019 build tool
 - If used in VS: Open Cmake Settings Editor => Select Toolset and Build root (CMakeSettings.json)
 - If used in VSCode: Initialize cmake project in MacOS/Linux/Windows will be the same. When using first time in Windows: cmake:quick start or configure -> select MingGW64 gcc
+- Add C:\Program Files\Git\bin to Path to run sh, bash scripts in Windows cmd/powershell
+- choco install make
+- make -f Makefile2
 
 # CMake Commands:
 
