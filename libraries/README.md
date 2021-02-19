@@ -17,3 +17,4 @@
 ## References:
 
 - https://www.cygwin.com/cygwin-ug-net/dll.html
+- https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library
