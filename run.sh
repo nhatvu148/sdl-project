@@ -1,3 +1,3 @@
 #! /bin/sh
 
-cd build ; ./sdl-project.exe
+cd build ; ./sdl-project
