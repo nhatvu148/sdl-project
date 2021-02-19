@@ -1,9 +1,11 @@
+#include <sdlprojectConfig.h>
 #include <iostream>
 #include <adder.h>
 #include <GLFW/glfw3.h>
 
-int main(int, char **)
+int main(int argc, char** argv)
 {
+    std::cout << argv[0] << " Version " << sdlproject_VERSION_MAJOR << "." << sdlproject_VERSION_MINOR << '\n';
     std::cout << "Hello, world!\n";
 
     std::cout << add(1, 2) << "\n";

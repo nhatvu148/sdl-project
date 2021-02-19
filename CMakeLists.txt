@@ -6,6 +6,10 @@ enable_testing()
 
 add_executable(sdlproject main.cpp)
 
+configure_file(sdlprojectConfig.h.in sdlprojectConfig.h)
+
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BINARY_DIR})
+
 add_subdirectory(Adder)
 
 #           DOWNLOAD ALL THE SUBMODULES
