@@ -2,7 +2,8 @@
     "cmake.configureOnOpen": true,
     "cmake.configureSettings": {
         "GLFW_BUILD_DOCS": "OFF",
-        "USE_ADDER": "ON"
+        "USE_ADDER": "ON",
+        "CMAKE_TOOLCHAIN_FILE": "C:\\Users\\nhatvu148\\Work\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake"
     },
     "files.associations": {
         "__bit_reference": "cpp",
