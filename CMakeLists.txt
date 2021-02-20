@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(sdlproject VERSION 1.0.0)
 
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED YES)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 include(CTest)
 enable_testing()
 
@@ -55,7 +59,9 @@ target_link_directories(${PROJECT_NAME}
         ${EXTRA_LIB_DIRS}
 )
 
-target_link_libraries(${PROJECT_NAME} ${EXTRA_LINKS} glfw)
+find_package(SDL2 REQUIRED)
+
+target_link_libraries(${PROJECT_NAME} ${EXTRA_LINKS} glfw SDL2::SDL2)
 
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)
 install(FILES "${PROJECT_BINARY_DIR}/sdlprojectConfig.h" DESTINATION include)
