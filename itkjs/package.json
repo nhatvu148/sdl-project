@@ -1,0 +1,10 @@
+{
+  "name": "nodehelloworld",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^9.1.0",
+    "itk": "^14.0.2"
+  }
+}

@@ -1,42 +1,57 @@
+#include <sdlprojectConfig.h>
 #include <iostream>
-#include <SDL.h>
+#ifdef USE_ADDER
+#include <adder.h>
+#endif
+#include <GLFW/glfw3.h>
 
-int main()
+int main(int argc, char **argv)
 {
-    const int SCREEN_WIDTH = 800;
-    const int SCREEN_HEIGHT = 600;
+    // if (argc > 1)
+    // {
+    //     return 1;
+    // }
+    std::cout << argv[0] << " Version " << sdlproject_VERSION_MAJOR << "." << sdlproject_VERSION_MINOR << '\n';
+    std::cout << "Hello, world!\n";
 
-    if (SDL_Init(SDL_INIT_VIDEO) < 0)
+#ifdef USE_ADDER
+    std::cout << "Using Adder lib:" << add(1, 112) << "\n";
+#else
+    std::cout << "NOT using Adder lib:" << 12 + 14 << "\n";
+#endif
+
+    GLFWwindow *window;
+
+    if (!glfwInit())
     {
-        std::cout << "SDL init failed" << std::endl;
-        return 1;
+        fprintf(stderr, "Failed to initialize GLFW\n");
+        exit(EXIT_FAILURE);
     }
 
-    SDL_Window *window = SDL_CreateWindow("Particle Fire Explosion",
-                                          SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT,
-                                          SDL_WINDOW_SHOWN);
-
-    if (window == NULL)
+    window = glfwCreateWindow(300, 300, "Gears", NULL, NULL);
+    if (!window)
     {
-        SDL_Quit();
-        return 2;
+        fprintf(stderr, "Failed to open GLFW window\n");
+        glfwTerminate();
+        exit(EXIT_FAILURE);
     }
 
-    bool quit = false;
-
-    SDL_Event event;
-
-    while (!quit)
+    // Main loop
+    while (!glfwWindowShouldClose(window))
     {
-        while(SDL_PollEvent(&event)) {
-            if (event.type == SDL_QUIT) {
-                quit = true;
-            }
-        }
+        // Draw gears
+        // draw();
+
+        // Update animation
+        // animate();
+
+        // Swap buffers
+        glfwSwapBuffers(window);
+        glfwPollEvents();
     }
 
-    SDL_DestroyWindow(window);
-    SDL_Quit();
+    // Terminate GLFW
+    glfwTerminate();
 
     return 0;
 }

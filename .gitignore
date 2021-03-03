@@ -54,3 +54,6 @@ out/build/
 build
 out
 .vs
+
+itkjs/node_modules
+itkjs/web-build
