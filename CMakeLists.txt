@@ -10,7 +10,7 @@ enable_testing()
 
 add_executable(sdlproject main.cpp)
 
-# list(APPEND CMAKE_PREFIX_PATH  C:/Users/nhatvu148/Work/vcpkg/packages/sdl2_x64-windows/share/sdl2)
+list(APPEND CMAKE_PREFIX_PATH  C:/vcpkg/packages/sdl2_x64-windows/share/sdl2)
 
 configure_file(sdlprojectConfig.h.in sdlprojectConfig.h)
 
