@@ -55,3 +55,8 @@
 - cd itkjs
 - npx itk-js build .
 - npx node ./index.js
+
+# Open source projects:
+
+- https://opensource.facebook.com/projects
+- https://opensource.microsoft.com/projects/explore/
